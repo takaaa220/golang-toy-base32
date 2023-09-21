@@ -15,6 +15,9 @@ func TestMain(t *testing.T) {
 		{
 			input: []byte("hello 世界"),
 		},
+		{
+			input: []byte("23232323, ✋!！あいうえお"),
+		},
 	}
 	for _, tt := range tests {
 		t.Run(string(tt.input), func(t *testing.T) {
